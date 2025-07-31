@@ -1,37 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RNA to DNA Converter</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f1f1f1;
-      text-align: center;
-      padding: 50px;
-    }
-    h1 {
-      color: #4CAF50;
-    }
-    .box {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      display: inline-block;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    a {
-      color: #333;
-      text-decoration: none;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="box">
-    <h1>RNA to DNA Converter</h1>
-    <p>This project takes an RNA sequence and converts it to DNA using Python.</p>
-    <p>Made by <strong>Daisy Cathrina</strong> 🤍</p>
-    <p><a href="https://github.com/daisycathrina/rna_to_dna_project" target="_blank">View Code on GitHub</a></p>
-  </div>
+  <h1>RNA to DNA Converter</h1>
+
+  <label for="rnaInput">Enter RNA Sequence:</label>
+  <input type="text" id="rnaInput" placeholder="e.g., AUGCGAU" />
+
+  <button onclick="convertRNA()">Convert</button>
+
+  <div id="rnaStrand" class="strand"></div>
+  <div id="dnaStrand" class="strand"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
